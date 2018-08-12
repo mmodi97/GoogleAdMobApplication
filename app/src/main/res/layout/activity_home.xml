@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayank.uberapplication.Home">
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        ads:adUnitId="@string/s1">
+    </com.google.android.gms.ads.AdView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:id="@+id/homeweb"
+        android:layout_below="@+id/adViewhome"
+        >
+
+    </WebView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewhome2"
+        android:layout_below="@+id/homeweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_marginLeft="30dp"
+
+        ads:adUnitId="@string/s1">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

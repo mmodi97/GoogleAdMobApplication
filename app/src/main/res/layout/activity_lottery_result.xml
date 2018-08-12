@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayank.uberapplication.LotteryResult">
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        ads:adUnitId="@string/s1">
+    </com.google.android.gms.ads.AdView>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:id="@+id/loteryresultweb"
+        android:layout_below="@+id/adViewresult"
+        >
+
+    </WebView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewresult2"
+        android:layout_below="@+id/loteryresultweb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_marginLeft="30dp"
+
+        ads:adUnitId="@string/s1">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
